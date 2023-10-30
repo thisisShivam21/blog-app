@@ -1,0 +1,71 @@
+$bg-color: white;
+$text-color: black;
+$soft-bg-color: #f0f0f0;
+$soft-text-color: #626262;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    body {
+        width: 100vw;
+
+        .container {
+            min-height: 100vh;
+            background-color: $bg-color;
+            color: $text-color;
+
+            .wrapper {
+                max-width: 96rem;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 0 5rem;
+
+                a {
+                    color: inherit;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 96rem) {
+
+    .wrapper {
+        max-width: 85.375rem;
+    }
+}
+
+@media screen and (max-width: 80rem) {
+
+    .wrapper {
+        max-width: 64rem;
+    }
+}
+
+@media screen and (max-width: 64rem) {
+
+    .wrapper {
+        max-width: 48rem;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 48rem) {
+
+    .wrapper {
+        max-width: 40rem;
+    }
+}
+
+@media screen and (max-width: 40rem) {
+
+    .wrapper {
+        max-width: 29.6875rem;
+    }
+}

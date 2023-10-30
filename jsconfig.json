@@ -1,7 +1,13 @@
 {
   "compilerOptions": {
+    // "paths": {
+    //   "@styles/*; @components/*, @hooks/*": ["./src/*"]
+    // }
     "paths": {
-      "@styles/*, @components/*, @hooks/*": ["./src/*"]
+      "@/*": ["./src/*"]
     }
+
   }
 }
+
+
