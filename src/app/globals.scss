@@ -1,7 +1,14 @@
+// @use "globalDark" as dark;
+// @use "globalLight" as light;
+
 $bg-color: white;
 $text-color: black;
 $soft-bg-color: #f0f0f0;
 $soft-text-color: #626262;
+
+html {
+    font-size: 62.5%;
+}
 
 * {
     margin: 0;
@@ -31,6 +38,20 @@ $soft-text-color: #626262;
     }
 }
 
+.dark {
+    $bg-color: #0f172a;
+    $text-color: #ddd;
+    $soft-bg-color: #1f273a;
+    $soft-text-color: #a6a6a6;
+}
+
+// .light {
+    // $bg-color: white;
+    // $text-color: black;
+    // $soft-bg-color: #f0f0f0;
+    // $soft-text-color: #626262;
+// }
+
 
 
 @media screen and (max-width: 96rem) {
@@ -41,7 +62,6 @@ $soft-text-color: #626262;
 }
 
 @media screen and (max-width: 80rem) {
-
     .wrapper {
         max-width: 64rem;
     }

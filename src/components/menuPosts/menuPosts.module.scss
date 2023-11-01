@@ -1,0 +1,72 @@
+@use "../../app/globalLight.scss" as light;
+
+.items {
+    margin: 2.1875rem 0 3.75rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2.1875rem;
+
+    .item {
+        display: flex;
+        align-items: center;
+        gap: 1.25rem;
+
+        .imageContainer {
+            flex: 1;
+            aspect-ratio: 1/1;
+            position: relative;
+
+            .image {
+                border-radius: 50%;
+                border: 3px solid lightgray;
+                object-fit: cover;
+            }
+        }
+
+        .textContainer {
+            flex: 4;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            .category {
+                padding: 3px 8px;
+                border-radius: 10px;
+                font-size: .75rem;
+                color: #fff;
+                width: max-content;
+            }
+
+            .category.travel {
+                background-color: #ff7857;
+            }
+
+            .category.fashion {
+                background-color: #ff7887;
+            }
+
+            .category.food {
+                background-color: #7fb881;
+            }
+
+            .category.culture {
+                background-color: #ffb14f;
+            }
+
+            .postTitle {
+                font-size: 1.125rem;
+                font-weight: 500;
+                color: light.$soft-text-color;
+            }
+
+            .details {
+                font-size: .75rem;
+            }
+
+            .date {
+                color: gray;
+            }
+
+        }
+    }
+}
