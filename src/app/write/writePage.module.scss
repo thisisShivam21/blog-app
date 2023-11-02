@@ -1,0 +1,78 @@
+@use "../../app/globalLight.scss" as light;
+
+.container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    .input {
+        padding: 3.125rem;
+        font-size: 4rem;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        color: light.$text-color;
+    }
+
+    .input::placeholder {
+        color: #b3b3b1;
+    }
+
+    .editor {
+        display: flex;
+        gap: 1.25rem;
+        height: 43.75rem;
+        position: relative;
+
+        .button {
+            width: 2.25rem;
+            height: 2.25rem;
+            border-radius: 50%;
+            background-color: transparent;
+            border: 1px solid light.$text-color;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .add {
+            display: flex;
+            gap: 1.25rem;
+            background-color: light.$bg-color;
+            position: absolute;
+            z-index: 999;
+            width: 100%;
+            left: 3.125rem;
+
+            .addButton {
+                width: 2.25rem;
+                height: 2.25rem;
+                border-radius: 50%;
+                background-color: transparent;
+                border: 1px solid light.$text-color;
+                border-color: #1a8917;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+            }
+        }
+
+        .textArea {
+            width: 100%;
+        }
+    }
+
+    .publish {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        padding: .625rem 1.25rem;
+        border: none;
+        background-color: #1a8917;
+        color: white;
+        cursor: pointer;
+        border-radius: 1.25rem;
+    }
+}

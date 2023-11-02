@@ -1,0 +1,73 @@
+@use "../../app/globalLight.scss" as light;
+
+.container {
+    margin-top: 3.125rem;
+
+    .title {
+        color: light.$soft-text-color;
+        margin-bottom: 1.875rem;
+    }
+
+    .write {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1.875rem;
+
+        .input {
+            padding: 1.25rem;
+            width: 100%;
+        }
+
+        .button {
+            padding: 1rem 1.25rem;
+            background-color: teal;
+            color: white;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    }
+
+    .comments {
+        margin-top: 3.125rem;
+
+        .comment {
+            margin-bottom: 3.125rem;
+
+            .user {
+                display: flex;
+                align-items: center;
+                gap: 1.25rem;
+                margin-bottom: 1.25rem;
+
+                .image {
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+
+                .userInfo {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    color: var(--softTextColor);
+
+                    .username {
+                        font-weight: 500;
+                    }
+
+                    .date {
+                        font-size: 0.875rem;
+                    }
+                }
+            }
+
+            .desc {
+                font-size: 1.125rem;
+                font-weight: 300;
+            }
+        }
+    }
+
+}

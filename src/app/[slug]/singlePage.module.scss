@@ -1,0 +1,112 @@
+@use "../../app/globalLight.scss" as light;
+
+
+.infoContainer {
+    display: flex;
+    align-items: center;
+    gap: 3.125rem;
+
+    .textContainer {
+        flex: 1;
+
+        .title {
+            font-size: 4rem;
+            margin-bottom: 3.125rem;
+        }
+
+        .user {
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
+
+            .userImageContainer {
+                width: 3.125rem;
+                height: 3.125rem;
+                position: relative;
+
+                .avatar {
+                    // width: 3rem;
+                    // height: 3rem;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+            }
+
+            .userTextContainer {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                color: light.$soft-text-color;
+
+                .username {
+                    font-size: 1.25rem;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+    .imageContainer {
+        flex: 1;
+        height: 21.875rem;
+        position: relative;
+
+        .image {
+            height: 21.875rem;
+            object-fit: cover;
+        }
+    }
+}
+
+.content {
+    display: flex;
+    gap: 3.125rem;
+
+    .post {
+        flex: 5;
+        margin-top: 3.75rem;
+
+        .description {
+
+            h2 {
+                margin-bottom: .5rem;
+            }
+
+            p {
+                font-size: 1.25rem;
+                font-weight: 300;
+                margin-bottom: 1.25rem;
+            }
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 96rem) {
+    .container>.infoContainer>.textContainer>.title {
+        font-size: 3.375rem;
+    }
+}
+
+@media screen and (max-width: 80rem) {
+    .container>.infoContainer>.textContainer>.title {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 64rem) {
+    .imageContainer {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 40rem) {
+    .container>.infoContainer>.textContainer>.title {
+        font-size: 2.25rem;
+    }
+
+    .description p {
+        font-size: 1.125rem;
+    }
+}

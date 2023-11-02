@@ -1,3 +1,17 @@
 .container {
-    
+    display: flex;
+    justify-content: space-between;
+
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 6.5rem;
+        padding: 1rem;
+        border: none;
+        border-radius: 2px;
+        background-color: crimson;
+        color: #fff;
+        cursor: pointer;
+    }
 }

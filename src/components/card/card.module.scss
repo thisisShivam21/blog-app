@@ -45,3 +45,9 @@
         }
     }
 }
+
+@media screen and (max-width: 80rem) {
+    .container > .imageContainer {
+      display: none;
+    }
+}
